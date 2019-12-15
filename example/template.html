@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" /> 
+        <title>Friendly Example - {{title}}</title>
+        <link rel="stylesheet" href="highlight/styles/default.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="sidebar">
+            <h1>Friendly Example</h1>
+            {{#posts}}                
+                <p>
+                    {{#other}}
+                        <a href="{{id}}.html">{{title}}</a>
+                    {{/other}}
+                    {{#self}}
+                        <span class="title">{{title}}</span>
+                    {{/self}}
+                    <br>
+                    <span class="date">{{posted}}</span>
+                </p>                
+            {{/posts}}
+        </div>
+        <div class="article">
+            <h1>{{title}}</h1>
+            <p class="meta">
+                <span class="posted">{{posted}}</span>
+                <span class="author">{{data.author}}</span>
+            </p>
+            {{{content}}}
+        </div>
+        <script src="highlight/highlight.unmin.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>

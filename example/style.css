@@ -1,0 +1,62 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100%;
+    font-family: Montserrat;
+    overflow: hidden;
+}
+
+.sidebar {
+    flex: 1 1 auto;
+    overflow: auto;
+    padding: 1em;
+    background: #47404d;
+    color: white;
+}
+
+.sidebar h1 {
+    color: #f2ed9d;
+}
+
+.sidebar a {
+    color: #b382c2;
+    font-weight: bold;
+}
+
+.sidebar .title {
+    font-weight: bold;
+}
+
+.sidebar .date {
+    font-size: 0.7em;
+}
+
+.article {
+    flex: 0 1 50em;
+    padding: 1em;
+    overflow: auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+.article .meta {
+    display: flex;
+    color: silver;
+    border-top: 1px solid;
+    padding-top: 1em;
+}
+
+.article .meta .posted, 
+.article .meta .author {
+    flex: 1 0 auto;
+}
+
+.article .meta .author {
+    text-align: right;
+}
