@@ -1,16 +1,16 @@
 {
-  "name": "yams",
+  "name": "zapata",
   "version": "1.0.0",
-  "description": "",
+  "description": "Extremely minimal static site generator: handlebars + markdown + frontmatter",
   "main": "index.js",
   "scripts": {
     "build": "tsc"
   },
   "bin": {
-    "yams": "bin/yams.js"
+    "zapata": "bin/zapata.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Daniel Earwicker",
+  "license": "MIT",
   "dependencies": {
     "@types/node": "^12.12.17",
     "@types/showdown": "^1.9.3",
